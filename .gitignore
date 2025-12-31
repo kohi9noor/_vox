@@ -10,9 +10,11 @@ node_modules
 models/xtts-v2/model.pth
 models/xtts-v2/.venv/
 models/xtts-v2/__pycache__/
-
+data/
 models/seed-vc/.venv/
 models/seed-vc/__pycache__/
+
+packages/server/sqlite.db
 
 models/make-an-audio/.venv/
 models/make-an-audio/__pycache__/

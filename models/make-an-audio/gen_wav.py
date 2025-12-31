@@ -19,7 +19,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'mps' if torch.ba
 
 SAMPLE_RATE = 16000
 
-DATA_DIR = Path('/Users/kohinoor/Desktop/dojo/vox/data/output')
+DATA_DIR = Path(__file__).parent.parent.parent / "data" / "output"
 MODEL_DIR = Path(__file__).parent.absolute()
 
 def parse_args():

@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(level
 logger = logging.getLogger(__name__)
 
 MODEL_DIR = Path(__file__).parent.absolute()
-DATA_DIR = Path("/Users/kohinoor/Desktop/dojo/vox/data/output")
+DATA_DIR = MODEL_DIR.parent.parent / "data" / "output"
 
 config = None
 model = None

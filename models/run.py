@@ -139,7 +139,7 @@ def main():
             check_versions(python_exe, ["torch", "pytorch-lightning", "numpy", "librosa"])
             if "make-an-audio" in config:
                 download_url = config["make-an-audio"]["model"]["download"]
-                download_model("make-an-audio", download_url, maa_path / "useful_ckpts")
+                download_model("make-an-audio", download_url, maa_path)
 
     xtts_path = MODELS_DIR / "xtts-v2"
     if xtts_path.exists():

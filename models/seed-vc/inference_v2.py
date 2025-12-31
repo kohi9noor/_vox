@@ -20,7 +20,7 @@ dtype = torch.float16
 
 MODEL_DIR = Path(__file__).parent.absolute()
 
-DATA_DIR = Path("/Users/kohinoor/Desktop/dojo/vox/data/output")
+DATA_DIR = MODEL_DIR.parent.parent / "data" / "output"
 
 vc_wrapper_v2 = None
 
