@@ -152,11 +152,13 @@ export const useAudioPlayer = () => {
   }, []);
 
   const togglePlayBar = useCallback(() => {
-    setIsPlaybarVisible((prev) => !prev);
-    if (isPlaybarVisible && audioRef.current) {
-      audioRef.current.pause();
-    }
-  }, [isPlaybarVisible]);
+    setIsPlaybarVisible((prev) => {
+      if (prev && audioRef.current) {
+        audioRef.current.pause();
+      }
+      return !prev;
+    });
+  }, []);
 
   const downloadCurrentAudio = useCallback(() => {
     if (!currentAudio) return;

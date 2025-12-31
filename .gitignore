@@ -17,6 +17,8 @@ node_modules
 .settings/
 *.sublime-workspace
 
+models/xtts-v2/model.pth
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
