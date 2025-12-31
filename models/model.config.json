@@ -1,0 +1,12 @@
+{
+  "make-an-audio": {
+    "model": {
+      "download": "https://drive.google.com/drive/folders/15ZJ74vOS9rjsOGKQP80l2KRQMJXoIORk"
+    }
+  },
+  "xtts": {
+    "model": {
+      "download": "https://drive.google.com/drive/folders/1jvLyyWqBXJpkJxJWg_1kaIwv4rIJxga0"
+    }
+  }
+}
