@@ -7,7 +7,16 @@ out-tsc
 
 # dependencies
 node_modules
+models/xtts-v2/model.pth
+models/xtts-v2/.venv/
+models/xtts-v2/__pycache__/
 
+models/seed-vc/.venv/
+models/seed-vc/__pycache__/
+
+models/make-an-audio/.venv/
+models/make-an-audio/__pycache__/
+models/make-an-audio/useful_ckpts/
 # IDEs and editors
 /.idea
 .project
