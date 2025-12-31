@@ -146,9 +146,9 @@ def main():
         print("\n--- Setting up XTTS-v2 ---")
         python_exe, pip_exe = setup_venv(xtts_path)
         if python_exe:
-            print("Installing TTS package for XTTS-v2...")
-            run_command([str(pip_exe), "install", "coqui-tts"])
-            check_versions(python_exe, ["torch", "coqui-tts"])
+            print("Installing TTS package and torchcodec for XTTS-v2...")
+            run_command([str(pip_exe), "install", "coqui-tts", "torchcodec"])
+            check_versions(python_exe, ["torch", "coqui-tts", "torchcodec"])
             if "xtts" in config:
                 download_url = config["xtts"]["model"]["download"]
                 download_model("xtts", download_url, xtts_path)
