@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────
+   Runtime tokens (browser only)
+───────────────────────────── */
+:root {
+  --background: lab(5% 0 0);
+  --foreground: lab(92% 0 0);
+
+  --surface: lab(8% 0 0);
+  --surface-foreground: lab(92% 0 0);
+
+  --primary: lab(85% 2 6);
+  --primary-foreground: lab(10% 0 0);
+
+  --muted: lab(18% 0 0);
+  --muted-foreground: lab(65% 0 0);
+
+  --border: lab(12% 0 0);
+  --ring: lab(85% 2 6);
+
+  /* Sidebar */
+  --sidebar: lab(7% 0 0);
+  --sidebar-foreground: lab(90% 0 0);
+  --sidebar-border: lab(11% 0 0);
+
+  --shadow-color: lab(0% 0 0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 160ms ease-out forwards;
+}
+
+/* ─────────────────────────────────────────────
+   Tailwind compile-time tokens
+   NO var() here — this is the critical fix
+───────────────────────────────────────────── */
+@theme {
+  --color-background: lab(5% 0 0);
+  --color-foreground: lab(92% 0 0);
+
+  --color-card: lab(8% 0 0);
+  --color-card-foreground: lab(92% 0 0);
+
+  --color-primary: lab(85% 2 6);
+  --color-primary-foreground: lab(10% 0 0);
+
+  --color-secondary: lab(18% 0 0);
+  --color-secondary-foreground: lab(70% 0 0);
+
+  --color-muted: lab(18% 0 0);
+  --color-muted-foreground: lab(65% 0 0);
+
+  --color-border: lab(12% 0 0);
+  --color-ring: lab(85% 2 6);
+
+  /* Sidebar */
+  --color-sidebar: lab(7% 0 0);
+  --color-sidebar-foreground: lab(90% 0 0);
+  --color-sidebar-border: lab(11% 0 0);
+
+  --font-main: "Be Vietnam Pro", sans-serif;
+}
+
+/* ───────────────────────────────────────────── */
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+* {
+  @apply transition-colors duration-150;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  @apply transition-colors duration-120;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(255, 255, 255, 0.1);
+  color: inherit;
+}

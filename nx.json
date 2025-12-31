@@ -18,6 +18,20 @@
           "buildDepsName": "build-deps",
           "watchDepsName": "watch-deps"
         }
+      },
+      "exclude": ["packages/server/*"]
+    },
+    {
+      "plugin": "@nx/js/typescript",
+      "include": ["packages/server/*"],
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck",
+          "cwd": "packages/server"
+        },
+        "build": {
+          "targetName": "build"
+        }
       }
     }
   ]
