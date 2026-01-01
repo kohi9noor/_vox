@@ -15,6 +15,10 @@
 
 <br />
 
+[![Watch the Demo](https://img.shields.io/badge/Watch-Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/g6lG5zhfPN8?si=vv6WTaPdieRBF45P)
+
+<br />
+
 _Integrating state-of-the-art voice conversion, SFX generation, and text-to-audio models into a seamless, high-fidelity experience._
 
 </div>
