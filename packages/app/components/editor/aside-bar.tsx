@@ -7,7 +7,7 @@ import { JobResponse } from '@/types';
 import { useEffect, useState } from 'react';
 
 interface AsidebarProps {
-  historyData: JobResponse[];
+  historyData: Record<string, JobResponse[]>;
   historyIsLoading: boolean;
   type: 'tts' | 'voice_conversion' | 'sfx';
 }
