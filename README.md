@@ -21,13 +21,13 @@ _Integrating state-of-the-art voice conversion, SFX generation, and text-to-audi
 
 ---
 
-## 📖 Overview
+## Overview
 
 VOX is a modular open-source AI audio platform that brings together state-of-the-art models for:
 
-- 🗣️ **Voice conversion & cloning**
-- 🌍 **Multilingual text-to-speech**
-- 🎶 **Text-to-audio & sound effects generation**
+- **Voice conversion & cloning**
+- **Multilingual text-to-speech**
+- **Text-to-audio & sound effects generation**
 
 ## Quick Start
 
@@ -38,7 +38,7 @@ chmod +x init.sh
 ./init.sh
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### **Frontend**
 
@@ -65,7 +65,7 @@ chmod +x init.sh
 - **Bash orchestration**
 - **Python-based** environment & model manager
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 ├── packages/
@@ -79,13 +79,13 @@ chmod +x init.sh
 └── init.sh           # One-command setup
 ```
 
-## ⚙️ System Requirements
+## System Requirements
 
 - **OS**: macOS (MPS) or Linux (CUDA)
 - **Python**: 3.10+
 - **Node.js**: 20+
 - **GPU**: Recommended (CPU supported with reduced performance)
 
-## 📄 License
+## License
 
 MIT — free to use, modify, and distribute.
